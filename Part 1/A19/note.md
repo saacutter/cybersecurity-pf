@@ -1,0 +1,1 @@
+The image provided is my proof of joining/membership with Coders for Causes. 
