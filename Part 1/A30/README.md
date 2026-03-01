@@ -1,0 +1,3 @@
+For this activity, I completed the "Try It: Cybersecurity Basics" module available on the edX platform. This module is written by the edX team and acts to introduce some basic cybersecurity concepts like encryption and subtitution ciphers. Further details on this module can be found at https://www.edx.org/learn/cybersecurity/edx-try-it-cybersecurity-basics.
+
+For my evidence, I have provided a few screenshots of the course completion pages. This course does not provide a certificate of completion, so I have tried my best to provide enough evidence to verify completion of this activity.
