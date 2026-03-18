@@ -1,0 +1,99 @@
+- Started with ASD segment
+    - Started with history of the ASD (and ACSC)
+    - ACSC is the government's public-facing cyber organisation
+    - Cyber threat report 2024-2025
+        - 42,500 calls to the cyber security hotline, up 16%
+        - responded to over 1200 cyber security incidents
+        - notified more than 1700 entities of potential malicious activity
+    - Australia is being targeted by state-sponsored actors (specifically referring to Russia and China)
+        - Also call out cybercriminals who are financially motivated
+        - Ransomware is the most disruptive threat (with over 130 incidents of ransomware alone)
+            - 39 of these were the ACSC notifying organisations of a potential attack
+        - Self-reported cost of cybercrime has increased (up to 219% for large businesses)
+    - Common techniques used by actors are phishing (38%), compromised accounts (31%), and gathering victim identity information (30%)
+    - Threats targeting small businesses include scam messages, business email attacks, and malicious software
+        - Scam messages aim to take over business accounts (like social media accounts) and hold them for ransomware
+        - Business email attacks involves using compromised credentials to pretend to be them
+        - Malware can lead to financial loss, loss of files, sensitive information leak, etc
+            - Ransomware is the most disruptive cyber threat
+    - Preventing attack methods:
+        - Turn on MFA
+            - Should be used wherever possible, starting with the most important accounts
+        - Implement access controls
+            - Used to limit damage to limit extent of cyberattack
+            - Principle of least privilege
+        - Using strong password/passphrases
+            - A lot of cyberattacks are due to poor password management (like reusing passwords)
+            - Recommend a password manager
+        - Managing shared accounts
+            - This should be avoided as much as possible (as it can be hard to track activity to specific people)
+    - To protect devices and information:
+        - Update software (use automatic updates if possible)
+        - Use security software (like antivirus)
+            - Recommend Windows Defender
+        - Back up information
+        - Manage shared accounts
+        - Secure your network
+            - Minimise external footprints
+        - Harden your website
+        - Reset devices before selling them
+        - Keep devices secure
+        - Protect your business data
+        - Use secure-by-design products/services
+    - Educating employees is necessary because they are the first line of defence
+        - This can mean making an emergency plan in the event of a cyberattack to reduce the impact of it
+        - Recommend staying informed of the cyberworld to become aware of potential cyberthreats that could impact your business
+        - The "Education Pack for Small Businesses" is available from the ACSC and ASD
+    - Cybercrimes/incidents should be reported to the ACSC/ASD
+
+- Moved onto Cyber Wardens presentation
+    - Cyber security threats is the third highest threat small businesses worry about (under financial costs)
+    - Top 3 cybercrimes targeting small businesses is inbox break-ins (business email comrpomise), fake invoices (which can be for both businesses paying fake invoices, or customers thinking they're paying the right invoices but paying a cybercriminal instead), and onling banking fraud
+        - Business email compromise can lead to other attacks because it has valuable information, leading to secondary attacks like:
+            - Company impersonation
+            - Changing payment details for supplier invoices
+            - Sending fake invoices to customers
+            - Stealing business files and data
+            - etc
+        - Protecting accounts can be done using long, strong, and unique passwords with a minimum of 14 characters and using MFA
+    - Some red flags that your business is being targeted:
+        - Unexpected invoices (which should be verified since attackers hope owners are too busy and just pay it)
+        - Change of banking details for a usual supplier (calling the supplier directly should be the first course of action)
+        - Uncommon or misspelt email addresses
+        - Unusual requests (imitation)
+        - Unusual or hidden links (phishing)
+        - Suspicious attachments on emails or social media messages
+    - Reasons why the team is the biggest vulnerability:
+        - Lack of training
+            - Mention of the typical requirement of a degree/diploma and the associated cost
+        - Human error
+        - Working offsite
+            - Being aware of surroundings (criminals can see your screen/keyboard which can become an attack vector)
+            - Avoid public Wi-Fi (specifically not using sensitive information on such networks)
+                - Recommend using a VPN or personal phone hotspot if doing sensitive things on an unsecure network
+        - Being busy and missing detail
+        - Personal targeting
+            - Being aware of what is being posted and how it can be utilised (specifically mentioning AI)
+    - Bad cyber habits:
+        - Snoozing software updates
+        - Putting laptop in sleep mode
+        - Short passwords
+        - Password spreadsheet
+        - Reusing passwords
+        - Paying for 1 software licence and sharing logins
+        - General casual staff login
+        - Adding personal details to out-of-office messages
+            - Can be used by cybercriminals who intercept them to trick other staff members
+    - Data breaches can be reported to:
+        - Australian Centre for Cyber Security
+        - Scamwatch
+        - IDCARE
+        - Australian Taxation Office (ATO)
+        - Australian Securities and Investments Commission (ASIC)
+        - Australian Signals Directorate
+    
+- Finished with Q&A
+    - Government entities cannot recommend specific password managers (but recommend having one over anything else)
+    - Website hardening involes using HTTPS (not HTTP), taking old websites that aren't being used offline, and demanding certain password requirements for online portals (if applicable)
+    - Recommend encrypted backups to protect against ransomware attacks (as then not everything is lost)
+    - For some reason they couldn't explain the difference between 2FA and MFA
