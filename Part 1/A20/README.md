@@ -1,0 +1,8 @@
+For this activity, I engaged in a discussion with two friends about the current state of AI agents and the access controls applied to them based on [this article](https://blog.barrack.ai/amazon-ai-agents-deleting-production/) (which was only a few days old at the time of discussion). There was no particular reason for choosing this topic in particular, but I find it an interesting topic so that was the primary motivation for the discussion. It is currently a very topical discussion as this has only become a recent issue with the emergence of AI agents, yet simultaneously reflects the broader issue of information security and access control.
+
+Although I was given consent to use screenshots of the discussion, I decided to transcribe the conversation instead because it would be easier to redact information. I have, however, included a few screenshots (with private information redacted) to verify that the transcript is legitimate. As such, the evidence for this activity's completion consists of the following:
+- A consent form signed by each individual involved in the discussion
+- Three (3) redacted screenshots of parts of the conversation
+- A transcript of the entire conversation
+
+Note that any section with `[REDACTED]` represents a real message (or image) in the conversation which was not relevant to the conversation. As they were not relevant, they have been removed from the conversation (but remain in the transcript as some relevant comments referred to them).

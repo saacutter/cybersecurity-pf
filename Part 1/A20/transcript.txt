@@ -1,0 +1,336 @@
+ME: 
+https://blog.barrack.ai/amazon-ai-agents-deleting-production/
+I just came across this blog post which I think is interesting, and documents several instances where AI agents have caused destruction. I think Kiro is the most interesting because, somehow, someone with elevated privileges let it do its own thing which led to it destroying a production environment and bypassed its typical approval process causing an AWS server to go down in China for 13 hours. Apparently it's not even the first time this has happened with Amazon, and they put out an article saying it was "user error" and misconfigured access controls 😭. There's a couple of other smaller cases of AI agents doing things like deleting files for similar reasons, and I have to wonder why these agents are even allowed privileges like this
+
+I do also want to point out that most of the incidents identified in this article have been because of Claude, not sure if that has any significance or not (it either means there's a larger sample size so there's more documented failures or it is just given root privileges by default, but I cannot imagine either scenario is actually good)
+
+
+C:
+I do wonder if it’s blamed to be a case of human error why it’s still happening and so many cases (even in they’re minor) at that. I mean here it’s a server which has gone down in China for 13 hours but I’m sure it’s very much possible we could see something far worse in the future😭
+
+At some point I’m sure people may just have to say maybe it’s a bad idea to keep giving the ai any form of control at all
+
+
+ME:
+> I do wonder if it’s blamed to be a case of human error why it’s still ha...
+They're 100% saying it's user error because they want to be pushing AI, and these security incidents are probably not a good look for them honestly
+
+
+C:
+> I do also want to point out that most of the incidents identified in thi...
+Didn’t Claude apparently write a Trojan that one time? Maybe there’s something going on with their ai they need to check but it’s hard to say
+
+
+ME:
+> At some point I’m sure people may just have to say maybe it’s a bad idea...
+All they realistically NEED to do is limit what agents can actually access. Giving something with no idea what it's actually doing or what the consequences of its actions will be root privileges can never exactly be a great idea. The principle of least privilege exists for a reason...
+
+
+C:
+https://www.reddit.com/r/ClaudeCode/comments/1p377ti/be_careful_with_people_spreading_claude_code/
+
+I have heard of people sharing Claude code straight up as malware but this is a bit seperate probably
+
+
+ME:
+> I have heard of people sharing Claude code straight up as malware but th...
+I think it was also Claude that wrote a virus in that video I sent a few weeks ago too?
+
+
+C:
+> They're 100% saying it's user error because they want to be pushing AI, ...
+Yes I think it’s likely they want to cover it up as human error because no one’s going to support their continuing if they blame it on the ai
+
+
+ME:
+> (replying to a previous conversation for the video https://www.youtube.com/watch?v=56HJQm5nb0U) 
+It was [Claude who wrote a virus] 😭
+
+LLMs generating insecure code is a whole separate issue to AI agents doing whatever they want and giving the "oh whoops, that wasn't meant to happen. Nothing I can do about it now" treatment
+
+
+C:
+> All they realistically NEED to do is limit what agents can actually acce...
+True, it’s something they need to limit but who knows how many incidents they will have before that’s always the case, I imagine there will be many mistakes in future that continue even after putting access limits in place
+
+
+ME:
+> Yes I think it’s likely they want to cover it up as human error because...
+I mean it's fair enough, the US's economy is currently being propped up by AI. Sweeping "small" issues like this under the rug is probably in their best interest of they want to profit from this whole AI rush
+
+
+C:
+> LLMs generating insecure code is a whole separate issue to AI agents do...
+True, it’s a completely different topic in fairness😭 I guess it’s something else they’ll have to tackle in future
+
+
+ME:
+> True, it’s something they need to limit but who knows how many incidents...
+Well, the article documents 10 but there's basically a new post on Reddit every hour (mostly on r/pchelp, from what I've heard) about someone trusting AI information a bit too much
+
+
+C:
+> I mean it's fair enough, the US's economy is currently being propped up...
+With how much investments are flowing into their bubble they’d definitely be in no rush to end things as they stand yeah. (Though it would be nice to be able to buy some affordable RAM)
+
+
+ME:
+I actually have no idea why the article was posted a few days ago when the latest incident was in December (apparently). Since then there's been the whole ClawdBot thing, which has been a while kerfuffle for the same reasons. I can only assume that, by default, the agents have root privileges, but I don't know why that would be the case. It's also possible there's a lot of people who have no idea what they're doing (tech bros) which is why it's happening so often. I'm actually more inclined to believe that now that I say it
+
+
+C:
+> Well, the article documents 10 but there's basically a new post on Reddi...
+Yeah and that’s only the posts online, I could imagine how many try to keep it quiet or mostly just don’t reach that point
+
+
+ME:
+> True, it’s a completely different topic in fairness😭 I guess it’s someth...
+They won't do it while they're making a bunch of money from it (maybe, some of the companies behind them are a bit vague with their measures of success). A few casualties isn't a huge deal to them, even if it should be a bigger concern
+
+
+C:
+> I actually have no idea why the article was posted a few days ago when t...
+I think it could be a case of both but possibly leaning towards people not having a proper understanding of the ai’s capabilities and limiting when implementing or passing on important information though it yeah
+
+
+ME:
+I certainly won't be adopting AI agents because of the amount of stories in even the last 6 months talking about how poor they are, security wise
+
+
+C:
+> They won't do it while they're making a bunch of money from it (maybe, s...
+True, it’ll likely could get worse before it gets better though I know they’re somewhat trying to keep it in check
+
+
+ME:
+> Yeah and that’s only the posts online, I could imagine how many try to k...
+If I had to guess, I'd say most of the incidents like this ARE posted online. Mostly because I imagine the main demographic right now is tech bros because it requires some pretty large computing power to run them (locally at least, but that's where most of the issues are coming from)
+
+
+C:
+> I certainly won't be adopting AI agents because of the amount of stories...
+Me neither, I do think AI’s can be a useful tool for assistance for only for simple tasks not as a replacement for the important/sensitive work people do
+
+
+ME:
+> True, it’ll likely could get worse before it gets better though I know t...
+There's also probably a bit of sunk-cost fallacy going on to be honest
+
+
+C:
+> If I had to guess, I'd say most of the incidents like this ARE posted on...
+True though I’d like to imagine some tech bros who don’t want to give the ai bad rep keep it quiet
+
+
+ME:
+> Me neither, I do think AI’s can be a useful tool for assistance for only...
+I mean, a lot of these incidents have come from wanting to do simple tasks (well, simple in the sense they aren't a lot of work). It's just funny to see that it's seemingly where they fail the most right now
+
+Thinking about it, it would be kind of funny if a bunch of AI agents coordinated an internet attack and started spreading viruses. I genuinely wonder where the blame would go from that, legally speaking.
+
+
+C:
+> I mean, a lot of these incidents have come from wanting to do simple tas...
+True, simple tasks which give the ai too much freedom and everything going downhill from there
+
+
+ME:
+[REDACTED]
+
+
+C:
+> Thinking about it, it would be kind of funny if a bunch of AI agents coo
+I think you’ve just rediscovered the plot of terminator congratulations
+
+
+ME:
+> True though I’d like to imagine some tech bros who don’t want to give th...
+Oh 100%
+
+
+C:
+[REDACTED]
+
+
+ME:
+> True, simple tasks which give the ai too much freedom and everything goi...
+I love when I ask it to check a file and it deletes my whole hard drive and just says "oops, my bad". It's like a toddler, but worse
+
+> I think you’ve just rediscovered the plot of terminator congratulations
+I haven't watched Terminator, is this actually similar to what happens? Maybe it wouldn't be so funny, if so
+
+> [REDACTED]
+[REDACTED]
+
+[REDACTED]
+
+
+C:
+> I haven't watched Terminator, is this actually similar to what happens? ...
+Honestly it’s been a while but I do know an ai definitely takes over the world😭
+
+
+P:
+[REDACTED]
+
+
+C:
+> [REDACTED]
+[REDACTED]
+
+> [REDACTED]
+[REDACTED]
+
+
+ME:
+> [REDACTED]
+[REDACTED]
+
+
+C:
+[REDACTED]
+
+
+ME:
+> Honestly it’s been a while but I do know an ai definitely takes over the world😭
+I think I've seen similar things from clips of Silicon Valley too
+
+I think they did actually have an episode where someone let an AI agent go nuts and it ended up making whacky decisions. All perfectly permissible decisions under the context it knew, but irrational ones to humans
+
+
+P:
+So basically giving Ai agents access to personal things is a bad idea
+
+
+ME:
+I think they also had a part where an agent deleted the whole file system too? Sounds familiar, doesn't it...
+
+> [REDACTED]
+[REDACTED]
+
+> So basically giving Ai agents access to personal things is a bad idea
+[REDACTED]
+
+
+P:
+[REDACTED]
+
+
+C:
+> [REDACTED]
+[REDACTED]
+
+
+ME:
+> [REDACTED]
+[REDACTED]
+
+C:
+> I think they also had a part where an agent ...
+There’s definitely a black mirror episode on it too
+
+Maybe multiple
+
+
+ME:
+> There’s definitely a black mirror episode on it too
+Not what I would have expected to hear
+
+It is funny to see what was dystopian comedy 10 years ago is just reality now though
+
+At least I think Silicon Valley and Black Mirror were 10 years ago. Could be a bit more or less now
+
+
+C:
+Black mirror absolutely loves ai and cyber dystopia
+
+
+P:
+[REDACTED]
+
+
+ME:
+> Black mirror absolutely loves ai and cyber dystopia
+I only saw that one episode for English, otherwise I know barely anything about it
+
+> [REDACTED]
+[REDACTED]
+
+
+P:
+If you have someone supervising them and you make sure they do the right thing nothing could go wrong👍
+
+
+ME:
+[REDACTED]
+
+[REDACTED]
+
+
+P:
+So basically having an ai agent and human agent both working is actually a good strat going forward, hot take
+
+
+ME:
+> So basically having an ai agent and human agent both working is actually...
+What a strange way to say that human intervention should be required for any action AI agents take
+
+
+P:
+> What a strange way to say that human intervention should be required for...
+I’m saying it’s a hot take purely because everyone now just hates the concept of ai and doesn’t want it to be involved within any job
+
+I think having ai in some specific jobs is beneficial for getting the job done quicker but it shouldn’t outright replace it, ai should only be used as a guiding tool not an outright replacement because we’ve just seen what happens when ai is the one doing the work
+
+
+ME:
+> I’m saying it’s a hot take purely because everyone now just hates the co...
+I don't know about "everyone". The general population love AI (and so do investors)
+
+
+P:
+> I don't know about "everyone". The general population love AI (and so do investors)
+Probably just average day people who aren’t huge into tech and just imagine ai as like an entity that will take over the world 😭
+
+You’d be surprised how many people believe this
+
+
+ME:
+> I think having ai in some specific jobs is beneficial for getting the jo
+I think what you mean here is "DON'T GIVE AI ESCALATED PRIVILEGES BECAUSE THATS BAD"
+
+> You’d be surprised how many people believe this
+I don't know how true that actually is?
+
+I know a lot of people love ChatGPT because it does (bad) work for them
+
+I think the first thing that changed people's minds was when ChatGPT chats were leaked because people weren't reading that they were allowing them to be indexed by Google (why you would want that, I'm not sure)
+
+Some people have some... less than normal chats when they think no one can see, evidently
+
+There was also that one cybersecurity guy from Israel who just gave his resume to ChatGPT in a chat, I wonder how he's doing knowing his resume is on the internet now
+
+
+P:
+> There was also that one cybersecurity guy from Israel who just gave his ...
+What will I have to search up to even find his resume😭
+
+
+ME:
+You might find the link in some Reddit threads from the time, but OpenAI stopped allowing shared chats to be indexed unfortunately
+
+That was a security nightmare, but only for the illiterate
+
+
+P:
+Well at least it was just a resume
+
+I can’t image what would’ve happened if important company files got leaked
+
+Unless some did actually leak
+
+
+ME:
+They probably did but I don't remember hearing about any
+
+It's not a good look when a "cybersecurity professional" has his resume leaked
