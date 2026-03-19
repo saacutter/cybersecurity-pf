@@ -1,0 +1,52 @@
+- Started with AFP segment
+    - AFP has the Joint Policing Cybercrime Coordination Centre (JPC3) unit to handle cybercrime in Australia
+    - Started with Australia's cybercrime threat using statistics from the ACSC Annual Threat Report 2024-25
+        - 84700 total cybercrime reports made via ReportCyber
+        - Average cost of a cybercrime incident for an individual was $33,000, $56,600 for small businesses
+        - $2.03 billion reported estimated loss to scams in Australia in 2024
+        - $95 million total self-reported business email compromise losses
+    - Top reported cybercrime threats for businesses:
+        - Email compromise resulting in no financial loss (19%)
+        - BEC resulting in financial loss (18%)
+        - Identity fraud (11%)
+    - Business behaviour (i.e. actually caring about cyber) typically happens as soon as they become a victim
+        - $19.3 million has been lost from Jan 1 - 18 Mar (up from $14.2 million for the same period in 2025)
+    - Business email compromise is when cybercriminals use a fake email account that looks or sounds similar to a business' real email address, or gain access to a legitimate email account
+        - These accounts are then used to try and defraud people and businesses out of money or goods
+        - Three main types of BEC techniques:
+            - Invoice fraud
+            - Employee/CEO impersonation (attackers impersonating someone, typically in a position of power, trying to defraud others)
+            - Company impersonation (attackers registering a domain similar to the real organisation to impersonate them)
+        - People used to be told to look for spelling mistakes and whatever else, but with AI this advice isn't as good anymore
+            - Also look out for urgency in the contact, since they'll often try to rush the victim so they don't think too much
+    - The JPC3 have contacted several businesses, and since September 2025 have stopped 504 organisations from being victims of BEC
+    - Small businesses can protect themselves against cybercrime by:
+        - Being vigilant against phishing
+            - Malicious actors will try and steal credentials using phishing techniques and use the compromised credentials to send out fraudulent content
+            - To prevent this, you should treat unexpected contact with caution, check the sender address carefully, don't click links or open attachments from unknown/unexpected sender, and never share passwords
+        - Setting up MFA
+            - Using two or more different types of action to verify your identity
+            - Makes it harder for cybercriminals to take over your account by adding additional security layers
+        - Implementing proactive business processes
+            - Introducing policies and procedures to address security risaks
+            - Approval processes for requests that ask for payment information/large transfers
+            - Verifying any requests from the sender using a known (not from the contact) source
+            - Ensure workers have cleare guidance on verifying account details
+        - Protect your domain names
+            - Keep the business domain names registered and renewed (even if no longer in use)
+                - Set calendar reminders
+            - Expired domains can be bought by criminals and used to impersonate your business
+            - Register common variations of your domain to prevent misuse by criminals registering similar names
+        - Training and awareness
+            - The best defence against BEC is training and awareness for employees, including how to identify scama/phishing/social engineering attempts
+            - Training staff to recognise red flags like requested changes to bank details, urgent/high-pressure payment requests, unusual requests from senior/authoritative figures, and email addresses or domains which don't look quite right
+    - Reporting cybercrime should be done as soon as possible to give the highest chance of preventing losses
+        - Australian Cyber Security Hotline (operated by the ACSC)
+        - If you notice a fraudulent transaction, the bank should be notified first (as they are the ones who can freeze funds and whatever) before reporting to the government
+
+- Moved onto the Cyber Wardens segment at 8:28
+    - Exact same presentation as yesterday
+    - For some reason mentioned that downloading `.rar` files will immediately put ransomware on your device when this is pretty unlikely (requires decompressing it at the very least and would probably only impact Windows devices)
+
+- Finished with Q&A at 8:54
+    - Nothing of note here
