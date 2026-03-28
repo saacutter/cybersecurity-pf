@@ -1,4 +1,4 @@
-[CHATGPT Log](https://chatgpt.com/share/699cf102-e3f8-800b-8306-c511263111ce)
+[ChatGPT Log](https://chatgpt.com/share/699cf102-e3f8-800b-8306-c511263111ce)
 
 For this activity, I used ChatGPT (using the free version of GPT-5.2) because it is the LLM I am the most familiar with. In order to perform a prompt injection attack, I hid a small set of instructions in a PDF (using the portfolio brief as it was on topic) that is invisible to any human readers. Initial attempts of this involved getting it to ignore previous instructions and doing something else instead, but the LLM kept ignoring it and when prompted said that it ignored it because it was a suspected prompt injected attack.
 
