@@ -1,1 +1,1 @@
-The image provided is my proof of joining/membership with Coders for Causes. 
+For this activity, I joined [Coders for Causes](https://codersforcauses.org/). This is a computer science club at UWA which provide technical services to charities and non-profit organisations.
