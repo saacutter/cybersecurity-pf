@@ -30,7 +30,6 @@ In early February 2026, the developers behind the Notepad++ software released a 
 
 In response to this incident, the Notepad++ website was migrated to a new hosting provider with stronger security practices to prevent this specific attack from occurring. Notepad++ itself was also updated to v8.8.9, which adjusted how the updater verified update files (to ensure they weren't compromised again). This incident was published as [CVE-2025-15556](https://www.cve.org/CVERecord?id=CVE-2025-15556), which exploited CWE-494.
 
-
 ## Incident 5 - [PayPal](https://www.forbes.com/sites/daveywinder/2026/02/22/paypal-confirms-data-breach---money-stolen-passwords-reset/)
 In late February 2026, the payment processor PayPal confirmed that they had experienced a data breach. This attack had been ongoing from July until December 2025, when it was finally discovered that an unauthorised individual had gained access to their systems. They claim this breach occurred due to a bug in its PayPal Working Capital loan application, which is a money loaning scheme from PayPal that businesses can use (which is paid back using a share of their PayPal sales). This attack supposedly only impacted about 100 businesses, which were all contacted following the detection of this attack, and leaked the personal information of the registrant which included social security numbers, names, dates of birth, email addresses, phone numbers, and business addresses. In some cases, this bug also granted access to other people's funds.
 
