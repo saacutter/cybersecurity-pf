@@ -9,7 +9,7 @@ Access control keypads are similar to traditional key-based locks, but replace t
 
 These keypads can be cost-effective since they don't need physical credentials to operate, and the codes can be changed quickly if a security incident were to occur. However, changing the codes needs to be done regularly to avoid security incidents which can be time-consuming if there are multiple keypads. They also may lack an audit trail to follow if a security incident were to occur, making it difficult to detect the intrusion.
 
-An example of a keypad access control device is the HID-40KNKS-02.
+<img src="access_control_pin.JPG" height="400" style="display: block; margin: 0 auto;">
 
 ## Card/Fob Access Control
 These access control systems use electronic credentials (which are stored on an electronic device like keycards or fobs) to enforce access control. These credentials are programmable and trackable, making them an effective choice for an access control system which needs to manage several people as it allows all actions to be tracked in the event of a security incident. These access control systems consist of the credentials (i.e. the keycard/fob/etc) and a reader, which scans the credentials on the device (often using RFID technology but other systems also exist) to determine whether the individual is authorised to enter the controlled area and unlocks the door electronically if they are. These access control systems are mostly used in buildings where there are lots of rooms which need different authorisations, like residential complexes (i.e. hotels, student accommodation, etc) and corporate offices.
@@ -23,7 +23,7 @@ Biometric access control systems use physical characteristics (i.e. inherence fa
 
 Unlike knowledge factors and possession factors which can be lost, stolen, or shared, inherence factors cannot significantly change and are unique to individuals reducing the risk of unauthorised access. These characteristics are also difficult (or impossible) to copy, meaning that they are more secure than other access control systems. They are also convenient systems for users because they don't have to carry anything extra with them or remember anything as they will always have these characteristics on them. However, lower quality biometric scanners may be vulnerable to attacks like lower accuracy if the characteristic is obscured or spoofing the sensor using an image of the characteristic allowing for unauthorised access.
 
-An example of a biometric access control device is the HID Amico Biometric Facial Recognition Reader.
+<img src="access_control_biometric_fingerprint.JPG" height="400" style="display: block; margin: 0 auto;">
 
 ## Mobile Access Control
 Mobile access control uses mobile devices (e.g. smartphones, tablets, wearable devices, etc) to enforce access control. It uses mobile credentials, which are unique digital keys issued to individuals which have the permissions they need. These credentials are shared to the individual's phone using a method like an app, website link, or QR code depending on how the system is set up. To enhance the security of these credentials, they are often encrypted on the device. Once the device has the credential, it can be used on access readers which use Bluetooth Low Energy or NFC (depending on the reader) to transmit the credential. The reader then validates the credential, and if the individual is authenticated (i.e. they have the necessary permissions) then the area will be unlocked.
