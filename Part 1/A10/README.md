@@ -7,6 +7,8 @@ This technique helps prevent malicious actors from performing attacks like re-id
 
 k-anonymity is still vulnerable to a few different attacks, like homogeneity attacks or background knowledge attacks. Homogeneity attacks occur when every member with a given combination of identifiers have the same (or with little variance) sensitive values. This means that an attacker can still infer private information about individuals with certainty. Background knowledge attacks occur when extra background knowledge is known about an individual, allowing an attacker to still re-identify them despite the k-anonymity of the data.
 
+The provided evidence is based on the example found at https://github.com/OpenMined/PyDP/tree/dev/examples/Tutorial_1-carrots_demo, but instead of using differential privacy I used k-anonymity.
+
 <br>
 
 # References
