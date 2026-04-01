@@ -7,6 +7,9 @@ For servers on the internet to enable HTTPS, they must have an SSL certificate f
 
 The SSL/TLS handshake takes place as soon as the client tries to communicate with the server. It begins with the client and server agreeing on the protocol and cipher suite (a set of algorithms to securely establish the connection). The client then authenticates the server by verifying its certificate, which is done by the server sending its certificate and the public key. The client then does some further checks on the certificate to ensure it is legitimate, including validating that the certificate was issued by a CA which the client trusts (which are typically handled by the browser). Once this is done, session keys are generated so that communication can use symmetric encryption (i.e. they use the same key for encryption and decryption) because it is faster.
 
+The following shows what web clients will typically show for websites using HTTPS: \
+<img src="https_uwa.png">
+
 <br>
 
 # References
