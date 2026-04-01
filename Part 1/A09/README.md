@@ -13,6 +13,13 @@ There are a few different protocols used by VPNs which transfer data between you
 - Secure Socket Tunneling Protocol (SSTP)
 - Point-to-Point Tunneling Protocol (PPTP)
 
+The following shows the connection process of NordVPN on my device. \
+<img src="vpn_connection.png" width="600">
+
+The following also show the (expected) difference in speeds and latency while using the VPN. \
+<img src="vpn_on_speedtest.png"> \
+<img src="vpn_off_speedtest.png">
+
 <br>
 
 # References
