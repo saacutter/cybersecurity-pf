@@ -16,7 +16,7 @@ Wafer locks use flat metal wafers to control the mechanism. These wafers are pus
 ## Pin Tumbler Locks
 Pin tumbler locks are one of the most basic types of locks, and the mechanism is used within various other locks (like padlocks). They use a set of (typically 6) spring-loaded vertical pins which control the locking mechanism. The key pushes the pins to a shear line, allowing it to rotate the cylinder freely. Every pin is split into two components which create the pinstack - the key pin and the driver pin. The key pins sit at the bottom of each pin stack, which are rounded at the end to allow the key cuts to slide past them easily. The driver pins sit on top, and cross the shear line while the lock is at rest to prevent the lock from being rotated.
 
-Below is (seemingly) a pin tumbler lock being used on the entrance door to the Computer Science building on the ground floor. \
+There are (what are assumed to be) pin tumbler locks located at various points on UWA's main campus, with this particular one being located on the ground floor's exit door in the Computer Science building. \
 <img src="pintumbler_uwa_cs_gf_entrance.jpg"  width="300" style="display: block; margin: 0 auto;">
 
 ## Tubular Locks
@@ -31,6 +31,11 @@ Electronic locks are unlike any other type of lock as they rely on electrical po
 ## Cam Locks
 Cam locks are commonly used to lock things like cabinets and lockers. They have two components - the lock body (which mostly sits flush with the enclosure), and a lever attached to the back known as a cam. Much like other types of keyed locks, the key moves the internal pins to a shear line which allows it to turn. As the key is turned inside the body, the orientation of the cam will change (usually 90 degrees or 180 degrees, depending on what it is fixed to) which will allow the enclosure to open. When the enclosure is locked, the cam sits behind the frame of the enclosure which prevents it from being opened.
 
+Cam locks are common for low security use cases. My desk happens to have a similar mechanism to lock the cabinets, which can be seen below.
+
+<img src="camlock_slot.jpg"  width="200" style="display: block; margin: 0 auto;">
+<img src="camlock_mechanism.jpg"  width="200" style="display: block; margin: 0 auto;">
+
 ## Mortise Locks
 Mortise locks are a common type of lock where the lock is built into a recessed pocket of the door rather than being attached to the door's surface. They require a key to be inserted before they open, ensuring that only authorised people can access what is beyond the door. There are various types of mortise locks, including deadlocks.
 
@@ -40,7 +45,7 @@ The Kensington lock is a type of lock used on portable electronic devices to kee
 ## Padlocks
 Padlocks are a type of portable lock which are typically used to secure two objects together, such as gates, doors, etc. Most padlocks will use either a numerical combination or a convention key (or a combination of both) to unlock. They consist of a body (which contains the entire mechanism) and a U-shaped shackle (which is typically a metal piece which holds the lock in place with the body). The shackle will often (but not always) include some sort of notch to act as a catch within the lock body, keeping it locked until the lock cylinder is rotated. In general, the weakest links in a padlock will be the material construction and type of mechanism used for keyed locks. Both of these could be the weakest link, meaning that security can significantly vary from lock to lock.
 
-Below is a padlock that I found being used to hold a cabinet closed on the outside of the Physics building near the Math building. \
+Padlocks are one of the most common types of locks used in public spaces. This particular padlock was being used to lock a cabinet on the outside of the Physics building near the Math building. \
 <img src="padlock_uwa_physics.jpg"  width="300" style="display: block; margin: 0 auto;">
 
 ## Miscellaneous Locks
