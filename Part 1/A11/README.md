@@ -9,6 +9,7 @@ Access control keypads are similar to traditional key-based locks, but replace t
 
 These keypads can be cost-effective since they don't need physical credentials to operate, and the codes can be changed quickly if a security incident were to occur. However, changing the codes needs to be done regularly to avoid security incidents which can be time-consuming if there are multiple keypads. They also may lack an audit trail to follow if a security incident were to occur, making it difficult to detect the intrusion.
 
+Below is the PIN sign in screen of my mobile phone. \
 <img src="access_control_pin.JPG" height="400" style="display: block; margin: 0 auto;">
 
 ## Card/Fob Access Control
@@ -16,13 +17,15 @@ These access control systems use electronic credentials (which are stored on an 
 
 There are some advantages to using these systems. Because the credentials are electronic, if the device is ever lost or misplaced then permissions associated with that credential can be revoked instantly which cannot be done with a physical key. It also allows access to be logged at all times, leaving an evidence trail that can be followed in the event of a security incident. Electronic credentials also allow for granular control with flexible/specific permissions for individual people (which can also be done temporarily if necessary) while still being able to use the same terminals at every access point. However, there are still some weaknesses with these systems. If the credential is stolen without the owner's knowledge (or the owner doesn't report it stolen), then an unauthorised individual can gain access to the building mostly undetected. It also relies on the individual keeping their credential on their person at all times, as forgetting it means that they can't access areas they need to.
 
-An example of a card access control device is the HID Signo 20 Reader.
+Below is a SmartRider scanner installed at East Perth Station, which is used to validate fares automatically. \
+<img src="access_control_card_smartrider.jpg" height="400" style="display: block; margin: 0 auto;">
 
 ## Biometric Access Control
 Biometric access control systems use physical characteristics (i.e. inherence factors) which are unique human features to enforce access control. These systems work by capturing the physical characteristic being used of each individual who needs access, which creates a sort of digital template of the biometric which is then stored in some sort of database (which varies based on local privacy regulations). These characteristics are then scanned at biometric scanners or readers, which authorises the individual if the new scan matches the previous scan and unlocks the door with an electronic signal. Because these features are unique to individuals, they are preferred for high-risk areas. There are several types of biometric access control systems, including fingerprint, facial recognition, eye scans, retinal scans, iris scans, voice recognition, or vein matching.
 
 Unlike knowledge factors and possession factors which can be lost, stolen, or shared, inherence factors cannot significantly change and are unique to individuals reducing the risk of unauthorised access. These characteristics are also difficult (or impossible) to copy, meaning that they are more secure than other access control systems. They are also convenient systems for users because they don't have to carry anything extra with them or remember anything as they will always have these characteristics on them. However, lower quality biometric scanners may be vulnerable to attacks like lower accuracy if the characteristic is obscured or spoofing the sensor using an image of the characteristic allowing for unauthorised access.
 
+Below is the main screen of my mobile phone, which has a fingerprint reader towards the bottom. \
 <img src="access_control_biometric_fingerprint.JPG" height="400" style="display: block; margin: 0 auto;">
 
 ## Mobile Access Control
@@ -36,6 +39,9 @@ An example of a mobile access control device is the HID Mobile Access system.
 Turnstiles are physical barriers used to control access in areas with large numbers of people and limit access to exclusive areas. They are generally designed with some sort of mechanical or electrical barrier (such as doors or arms) which moves/rotates in a single direction and are fixed to the ground in some way. In general, they only allow one person through at any given time and are integrated with an access control system to only permit authorised individuals entry to the designated area. Access control is typically enforced with some sort of key (usually a keycard but it can be other things like biometrics or keypads) which allows the barrier to unlock (either for an amount of time or until it has rotated one person's width, depending on the barrier) at which point it locks again which reduce tailgating and other forms of unauthorised entry. In some cases where access control isn't required, these turnstile systems are still used to manage congestion effectively (and are often designed differently, like with swinging glass doors). Turnstiles are often combined with other barriers like walls to ensure that people can only enter through the turnstiles to ensure that any people in the area are authorised. They are commonly used in areas like public transport stations (to validate fares and manage the foot traffic effectively), commercial buildings (to ensure that only authorised individuals like employees are permitted), and entertainment venues (to help manage congestion during entry and ensure that only ticket holders can enter).
 
 There are a few different types of turnstiles. These include waist-high turnstiles (which feature waist-level barriers providing a basic level of access control), tripod turnstiles (which have a cylinder of three rotating arms on angle to allow one person to pass through each rotation), full-height turnstiles (which have barriers that cover the floor to the ceiling offering higher security), optical turnstiles (which use light to detect entry), and speed gates (which use retractable glass or acrylic barriers that open automatically when an individual is authenticated).
+
+Below is some wait-high turnstiles found at Perth Underground Station, which prevents people from entering/leaving without paying their fares and minimises congestion.
+<img src="access_control_turnstiles_pu.jpg" height="400" style="display: block; margin: 0 auto;">
 
 <br>
 
