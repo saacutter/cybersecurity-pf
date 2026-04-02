@@ -5,7 +5,7 @@ Firewalls are a security mechanism which provide protection against cyber attack
 
 There are two types of firewall - hardware firewalls and software firewalls. Hardware firewalls are physical devices which are positioned between your devices and the internet. They are often part of your home router, and are useful to protect multiple devices on your network. Software firewalls are firewalls which are run separately on devices. Although they can be part of the operating system, third-party options also exist. They allow the network behaviour of individual applications to be controlled, but because they run locally on the device this can hinder its ability to detect malicious activity.
 
-The below shows Windows Firewall. \
+The below shows Windows Firewall running on my desktop. \
 <img src="windows_defender_firewall.png" width="700">
 
 ## Intrusion Detection and Prevention Systems
@@ -13,7 +13,7 @@ Intrusion detection systems (IDS) are security tools which monitor network traff
 
 Intrusion prevention systems (IPS), on the other hand, are security tools which are similar to IDSs but have the additional capability to take action by logging the event and reporting it to the security team. They can also automatically take actions against threats like malicious traffic and malicious content (by dropping the packets or blocking the traffic) as well as communicate with other security devices to take action, which reduces the manual effort required by security teams compared to IDSs. Unlike IDSs, they analyse traffic in real-time and sit directly in the communication path for inbound and outgoing traffic which allows them to take automated actions. Like IDSs they also can use signature-based or anomaly-based detection methods, but IPSs can also use policy-based detection. Policy-based detection methods detect threats based on the security policies defined by the security team. If any action is detected which violates these policies, the IPS blocks the action from occurring.
 
-The below is shows OSSEC, an open source host-based IDS, running on Windows. \
+The below is shows OSSEC, an open source host-based IDS, running on my Windows 10 desktop. \
 <img src="ids_OSSEC.png" width="300">
 
 ## Packet Analysers
@@ -21,7 +21,7 @@ Packet analysers (sometimes called packet sniffers) are pieces of hardware (like
 
 Although packet analysers can be used on both wired and wireless networks, there may be some differences in the packets it can see. On a wired network, the analysre may have access to packets sent to all connection machines depending on where the analyser is placed and the topology of the network. On wireless networks, the analyser can usually only scan one channel at a time which reduces the amount of packets it can see.
 
-The below shows `tcpdump`, an open source packet analyser, running on a Linux virtual machine. \
+The below shows `tcpdump`, an open source packet analyser, running on a Linux virtual machine (WSL) on my desktop. \
 <img src="packet_analyser_tcpdump.png" width="700">
 
 ## Honeypots
@@ -31,7 +31,7 @@ There are various different types of honeypots which are used to detect differen
 
 Although honeypots offer some additional security by drawing attackers away from real systems, they do have some weaknesses. If the attacker recognises that the system is a honeypot, they can flood the honeypot which draws attention away from attacks on the real system. Additionally, if the honeypot is misconfigured, it could be possible for attackers to use it to enter the network and find the real system. Although these vulnerabilities can both be addressed, they have to be implemented carefully to not compromise the real system.
 
-The below is a container showing Cowrie, an open source honeypot, running using the docker containers from CITS1003 Lab 4. \
+The below is a container showing Cowrie, an open source honeypot, running using the docker containers from CITS1003 Lab 4 on my desktop. \
 <img src="honeypots_cowrie_cits1003_lab4.png" width="900">
 
 ## Domain Name System Security Extensions (DNSSEC)
@@ -43,6 +43,7 @@ DNSSEC adds two features to the DNS protocol to achieve this strengthened authen
 
 The below is the enabled options for DNSSEC on my domain on the Porkbun dashboard. \
 <img src="DNSSEC_porkbun.png" width="400">
+<img src="DNSSEC_porkbun_panel.png" width="400">
 
 <br>
 
