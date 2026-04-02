@@ -16,6 +16,9 @@ Wafer locks use flat metal wafers to control the mechanism. These wafers are pus
 ## Pin Tumbler Locks
 Pin tumbler locks are one of the most basic types of locks, and the mechanism is used within various other locks (like padlocks). They use a set of (typically 6) spring-loaded vertical pins which control the locking mechanism. The key pushes the pins to a shear line, allowing it to rotate the cylinder freely. Every pin is split into two components which create the pinstack - the key pin and the driver pin. The key pins sit at the bottom of each pin stack, which are rounded at the end to allow the key cuts to slide past them easily. The driver pins sit on top, and cross the shear line while the lock is at rest to prevent the lock from being rotated.
 
+Below is (seemingly) a pin tumbler lock being used on the entrance door to the Computer Science building on the ground floor. \
+<img src="pintumbler_uwa_cs_gf_entrance.jpg"  width="300" style="display: block; margin: 0 auto;">
+
 ## Tubular Locks
 Tubular locks use a similar mechanism to pin tumbler locks, with the name referring to the fact that the keyface is circular rather than the internal mechanism of the lock. Unlike pin tumbler locks, tubular locks arrange the pins into a circular formation around the keyway and typically contain 8 pins which move horizontally rather than vertically. The key is also circular to accomodate this, with a notch on one side to make the orientation of the key clear. Additional cuts are made to the key's body which correspond with the pin positions to push the pins to the shear line allowing the key plug to freely rotate. Because of the circular shape, these locks are harder to pick than pin tumbler locks (and therefore offer better security) but can still be picked fairly easily.
 
@@ -36,6 +39,24 @@ The Kensington lock is a type of lock used on portable electronic devices to kee
 
 ## Padlocks
 Padlocks are a type of portable lock which are typically used to secure two objects together, such as gates, doors, etc. Most padlocks will use either a numerical combination or a convention key (or a combination of both) to unlock. They consist of a body (which contains the entire mechanism) and a U-shaped shackle (which is typically a metal piece which holds the lock in place with the body). The shackle will often (but not always) include some sort of notch to act as a catch within the lock body, keeping it locked until the lock cylinder is rotated. In general, the weakest links in a padlock will be the material construction and type of mechanism used for keyed locks. Both of these could be the weakest link, meaning that security can significantly vary from lock to lock.
+
+Below is a padlock that I found being used to hold a cabinet closed on the outside of the Physics building near the Math building. \
+<img src="padlock_uwa_physics.jpg"  width="300" style="display: block; margin: 0 auto;">
+
+## Miscellaneous Locks
+Below are a few locks which I found but could not identify what type of lock they were or they did not fit the above categories.
+
+The first lock I found was a bike lock being used near the Physics building on campus. \
+<img src="bikelock.jpg"  width="300" style="display: block; margin: 0 auto;">
+
+The second lock I found was a combination of a padlock and seemingly a cam lock being used on a cabinet on the gorund floor of the Computer Science building, which offers extra security compared to just using one or the other. \
+<img src="cam_padlock_combo_cs_gf_cabinet.jpg"  width="300" style="display: block; margin: 0 auto;">
+
+The third lock I found was on the entrance to the Computer Science building. Without seeing the key it would be hard to identify what type of mechanism it uses. \
+<img src="keylock_uwa_cs_entrance.jpg"  width="300" style="display: block; margin: 0 auto;">
+
+The fourth lock I found was a keypad lock being used to hold the defibrillator near the Computer Science building on campus. \
+<img src="keypad_uwa_defib.jpg"  width="200" style="display: block; margin: 0 auto;">
 
 <br>
 
