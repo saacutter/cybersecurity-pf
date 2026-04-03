@@ -10,6 +10,9 @@ The SSL/TLS handshake takes place as soon as the client tries to communicate wit
 The following shows what web clients will typically show for websites using HTTPS: \
 <img src="https_uwa.png">
 
+The certificate data for websites using HTTPS is publicly accessible (naturally), and will have the following format: \
+<img src="ca_uwa_general.png" width="400">
+
 <br>
 
 # References
