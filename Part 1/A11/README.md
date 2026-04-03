@@ -9,7 +9,7 @@ Access control keypads are similar to traditional key-based locks, but replace t
 
 These keypads can be cost-effective since they don't need physical credentials to operate, and the codes can be changed quickly if a security incident were to occur. However, changing the codes needs to be done regularly to avoid security incidents which can be time-consuming if there are multiple keypads. They also may lack an audit trail to follow if a security incident were to occur, making it difficult to detect the intrusion.
 
-Below is the PIN sign in screen of my mobile phone. \
+The PIN sign in screen found on my mobile device (a common setup for mobile devices) can be seen below. \
 <img src="access_control_pin.JPG" height="400" style="display: block; margin: 0 auto;">
 
 ## Card/Fob Access Control
@@ -17,7 +17,7 @@ These access control systems use electronic credentials (which are stored on an 
 
 There are some advantages to using these systems. Because the credentials are electronic, if the device is ever lost or misplaced then permissions associated with that credential can be revoked instantly which cannot be done with a physical key. It also allows access to be logged at all times, leaving an evidence trail that can be followed in the event of a security incident. Electronic credentials also allow for granular control with flexible/specific permissions for individual people (which can also be done temporarily if necessary) while still being able to use the same terminals at every access point. However, there are still some weaknesses with these systems. If the credential is stolen without the owner's knowledge (or the owner doesn't report it stolen), then an unauthorised individual can gain access to the building mostly undetected. It also relies on the individual keeping their credential on their person at all times, as forgetting it means that they can't access areas they need to.
 
-Below is a SmartRider scanner installed at East Perth Station, which is used to validate fares automatically. \
+A SmartRider scanner, located at East Perth train station, is an example of card-based access control as it is used to validate fares automatically. \
 <img src="access_control_card_smartrider.jpg" height="400" style="display: block; margin: 0 auto;">
 
 ## Biometric Access Control
@@ -25,7 +25,7 @@ Biometric access control systems use physical characteristics (i.e. inherence fa
 
 Unlike knowledge factors and possession factors which can be lost, stolen, or shared, inherence factors cannot significantly change and are unique to individuals reducing the risk of unauthorised access. These characteristics are also difficult (or impossible) to copy, meaning that they are more secure than other access control systems. They are also convenient systems for users because they don't have to carry anything extra with them or remember anything as they will always have these characteristics on them. However, lower quality biometric scanners may be vulnerable to attacks like lower accuracy if the characteristic is obscured or spoofing the sensor using an image of the characteristic allowing for unauthorised access.
 
-Below is the main screen of my mobile phone, which has a fingerprint reader towards the bottom. \
+The main sign in screen found on my mobile device, which features a biometric fingerprint sensor, can be seen below. \
 <img src="access_control_biometric_fingerprint.JPG" height="400" style="display: block; margin: 0 auto;">
 
 ## Mobile Access Control
@@ -40,7 +40,7 @@ Turnstiles are physical barriers used to control access in areas with large numb
 
 There are a few different types of turnstiles. These include waist-high turnstiles (which feature waist-level barriers providing a basic level of access control), tripod turnstiles (which have a cylinder of three rotating arms on angle to allow one person to pass through each rotation), full-height turnstiles (which have barriers that cover the floor to the ceiling offering higher security), optical turnstiles (which use light to detect entry), and speed gates (which use retractable glass or acrylic barriers that open automatically when an individual is authenticated).
 
-Below is some wait-high turnstiles found at Perth Underground Station, which prevents people from entering/leaving without paying their fares and minimises congestion.
+Waist-high turnstiles are used at most train stations part of the TransPerth network. These particular ones can be found at the upstairs entrance in Perth Underground, and they prevent people from entering/exiting without paying their fares and help minimise congestion. \
 <img src="access_control_turnstiles_pu.jpg" height="400" style="display: block; margin: 0 auto;">
 
 <br>
