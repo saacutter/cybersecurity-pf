@@ -21,8 +21,10 @@ Antivirus software is a piece of software which runs locally on computers as a b
 
 Most modern devices come with an antivirus built-in to the operating system. Windows comes pre-installed with Windows Defender, MacOS comes pre-installed with Notarisation and XProtect, and Android comes pre-installed with Google Play Protect. Some devices may additionally come pre-installed with a free trial for a third-party antivirus, like Acer laptops which come pre-installed with [McAfee](https://www.acer.com/au-en/mcafee). In addition to these, users can install (and pay for) their own third-party antivirus software to keep their devices protected against malware.
 
-Windows Defender is a common antivirus that comes pre-installed on all Windows devices. The security dashboard as it appears on my desktop can be seen below. \
+Windows Defender is a common antivirus that comes pre-installed on all Windows devices. The security dashboard as it appears on my desktop, as well as the results to a quick scan, can be seen below. \
 <img src="antivirus_windows_defender.png" width="700" style="display: block; margin: 0 auto;">
+
+<img src="antivirus_windows_defender_scan.png" width="700" style="display: block; margin: 0 auto;">
 
 ## Password Managers
 Password managers are a piece of software which help create, manage, and store your passwords. Although this is often done locally on your own hardware, it is becoming increasingly more common to use a cloud-based password manager to access your passwords across devices. Password managers work by having a "master password" (which can key any sort of login depending on the provider), and this is the only piece of information needed to access your stored passwords. Usually, the passwords being stored are encrypted when they are added to the "vault" (the storage location of your passwords). This prevents attackers who may have gained access to your device from accessing these passwords, even if they manage to find where they are stored. These passwords can then be decrypted using some sort of secret (usually involving the master password) allowing you to see your passwords.
