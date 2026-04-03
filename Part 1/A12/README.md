@@ -21,8 +21,8 @@ Antivirus software is a piece of software which runs locally on computers as a b
 
 Most modern devices come with an antivirus built-in to the operating system. Windows comes pre-installed with Windows Defender, MacOS comes pre-installed with Notarisation and XProtect, and Android comes pre-installed with Google Play Protect. Some devices may additionally come pre-installed with a free trial for a third-party antivirus, like Acer laptops which come pre-installed with [McAfee](https://www.acer.com/au-en/mcafee). In addition to these, users can install (and pay for) their own third-party antivirus software to keep their devices protected against malware.
 
-The below shows Windows Defender as it appears on my device. \
-<img src="antivirus_windows_defender.png" width="700">
+Windows Defender is a common antivirus that comes pre-installed on all Windows devices. The security dashboard as it appears on my desktop can be seen below. \
+<img src="antivirus_windows_defender.png" width="700" style="display: block; margin: 0 auto;">
 
 ## Password Managers
 Password managers are a piece of software which help create, manage, and store your passwords. Although this is often done locally on your own hardware, it is becoming increasingly more common to use a cloud-based password manager to access your passwords across devices. Password managers work by having a "master password" (which can key any sort of login depending on the provider), and this is the only piece of information needed to access your stored passwords. Usually, the passwords being stored are encrypted when they are added to the "vault" (the storage location of your passwords). This prevents attackers who may have gained access to your device from accessing these passwords, even if they manage to find where they are stored. These passwords can then be decrypted using some sort of secret (usually involving the master password) allowing you to see your passwords.
@@ -31,33 +31,41 @@ In addition to storing passwords, password managers also often have password gen
 
 There are various different password managers, and some which can run entirely offline include [KeePass](https://keepass.info/) and [Buttercup](https://github.com/buttercup). There are also some options which are pseudo-offline, like [ProtonPass](https://proton.me/support/pass-offline-access) (which only requires an internet connection on initial sign in) and [self-hosted Bitwarden](https://bitwarden.com/help/self-host-bitwarden/) which allows users to store their passwords on their own servers instead of Bitwarden's.
 
-The below shows Keepass and some dummy entries to investigate its functionality. \
-<img src="password_manager_keepass_masterkey.png" width="500">
-<img src="password_manager_keepass_database.png" width="500">
+In order to investigate the functionalities of these offline password managers, I looked at Keepass. It has the option to have several databases, which are stored as local files on the machine and protected by the master key (which is chosen at database creation time). Once the database is created, password entries can be easily added to the database.
+<div style="display: flex">
+    <img src="password_manager_keepass_masterkey.png" width="400">
+    <img src="password_manager_keepass_database.png" width="600">
+</div>
 
 ## Offline Backups
 Backups are digital copies of important data that can be used to restore data if it is ever lost. Offline backups, as the name suggests, are data backups which are stored locally off any networks. This means that if your data was to ever be lost through, for example, a malware attack on your device, it can be restored using this backup. The data that is considered important will vary by users, and can range from small things like photos and documents to large things like databases and images of your device's storage (including the operating system, applications, and all other data stored on the device).
 
 There are various advantages to maintaining an offline backup of important data. This backup should be stored offsite to maximise the chances of recovering data. This means that if the building where your devices are is impacted by some incident (e.g. fire, earthquake, theft, etc), the data can still be recovered. Maintaining a regular backup of your data will minimise the data loss from such an incident, so they should be done frequently. This can be done automatically on a scheduled routine, or manually whenever big changes have been made to your data.
 
-The below shows the offline backup settings for files on Windows. \
-<img src="offline_backup_windows.png" width="700">
+Windows, by default, has a feature allowing backups of specific files to be made to another drive. After choosing some folders to backup to an external drive and how often I wanted backups to occur (using teh default of every hour), it started creating copies of the data and writing them to the drive.
+
+<img src="offline_backup_starting.png" width="700" style="display: block; margin: 0 auto;">
+
+Once it had finished, it declared the size of the backup and stated when the last backup was.
+
+<img src="offline_backup_finished.png" width="700" style="display: block; margin: 0 auto;">
+
+This same data was also reflected in another control panel for offline backups, known as File History.
+
+<img src="offline_backup_filehistory.png" width="700" style="display: block; margin: 0 auto;">
 
 ## Disk Encryption
 Disk encryption is an essential part of information security. It keeps your data secure in the event that your device is lost or stolen, preventing unauthorised access to your data. There are a few different types of disk encryption, including Full Disk Encryption, File-Level Encryption, Hardware-Based Encryption, Software-Based Encryption, Virtual Disk Encryption, and Database Encryption. Full-Disk Encryption, as the name suggests, encrypts the entire volume/drive (including operating system files). This is common to protect data at rest, as it prevents unauthorised access to the data even with physical access to the storage drive. File-Level Encryption only encrypts individual files (including directories), but generally has less impact on system performance due to it not needing to decrypt every file whenever they are required which has a lot of overhead.
 
-Most modern operating systems have some form of disk encryption mechanism available to use. Windows has BitLocker, MacOS has FileVault, and many Linux distributions come with the Linux Unified Key Setup (LUKS). These all encrypt data slightly differently, but the main objective of protecting your data is the same across all of them. \
-<img src="offline_disk_encryption.png" width="400">
+Most modern operating systems have some form of disk encryption mechanism available to use. Windows has BitLocker, MacOS has FileVault, and many Linux distributions come with the Linux Unified Key Setup (LUKS). These all encrypt data slightly differently, but the main objective of protecting your data is the same across all of them.
 
 ## Memory Forensics Tools
 Memory forensics is the process of capturing an image of the RAM of a device which contains data like currently running processes, open files, network connections, and system/user configurations at the time of the image. This image can then be inspected, identifying if there is evidence of any malicious activity within the image. The RAM is often imaged instead of the main storage drive because the RAM is significantly smaller, so capturing an image will be much quicker and easier to analyse. Additionally, there is some malware which can be executed directly from the memory without being written to the disk so memory forensics can be used to determine the impact it had on the system.
 
 This is an important part of incident response and threat analysis which aims to uncover evidence of malware that leave footprints in a system's RAM. There are some challenges to using the RAM because it is volatile. It is constantly changing and only exists while the system is powered on, making capturing images difficult sometimes. This volatility also poses issues because it makes it difficult to preserve data in its original state. This also impacts the tools used to extract the memory, which can accidentally modify the memory contents.
 
-Some popular memory forensics tools include [Volatility](https://volatilityfoundation.org/) which has support for several operating systems, and the [Linux Memory Extractor](https://github.com/jtsylve/LiME) (or LiME) which is only available for Linux.
-
-The below shows Volatility running using the docker containers from CITS1003 Lab 8. \
-<img src="memory_volatility_cits1003_lab8.png" width="900">
+Some popular memory forensics tools include [Volatility](https://volatilityfoundation.org/) which has support for several operating systems, and the [Linux Memory Extractor](https://github.com/jtsylve/LiME) (or LiME) which is only available for Linux. Using the instructions from CITS1003 lab 8, I was able to get voltaility to analyse a memory dump that was available on the Docker container to view its contents. \
+<img src="memory_volatility_cits1003_lab8.png" width="900" style="display: block; margin: 0 auto;">
 
 <br>
 
