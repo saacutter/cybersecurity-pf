@@ -1,7 +1,10 @@
 # Security Concepts on Campus
 ## [UWA Security](https://www.uwa.edu.au/about/campus-services/security-and-emergencies/security-services)
-UWA has on-campus security (known as UWA Security) who offer a few different services for students (as well as staff and other visitors) depending on their needs. Using the SafeZone app (a third-party app used for security purposes by several organisations), you are able to connect directly with UWA Security at any time of day. \
-<img src="uwa_safezone.png" height="400" style="display: block; margin: 0 auto;">
+UWA has on-campus security (known as UWA Security) who offer a few different services for students (as well as staff and other visitors) depending on their needs. Using the SafeZone app (a third-party app used for security purposes by several organisations), you are able to connect directly with UWA Security at any time of day.
+<div style="display: flex;">
+    <img src="uwa_safezone.png" height="400" style="display: block; margin: 0 auto;">
+    <img src="uwa_safezone_identity.png" height="400" style="display: block; margin: 0 auto;">
+</div>
 
 UWA Security also conducts 24/7 patrolling on campus. At various points on campus (mostly areas expected to have student coverage 24/7 like libraries), there are also help points which have a button to connect directly with UWA Security. One of these help points, located near the entrance to Winthrop Hall near Hackett Hall, can be seen below. \
 <img src="uwa_security_helppoint.jpg" height="400" style="display: block; margin: 0 auto;">
