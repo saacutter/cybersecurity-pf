@@ -6,9 +6,10 @@ Throughout the property, both inside and outside, there are cameras installed. E
 <img src="camera.jpg" width=200 style="display: block; margin: 0 auto;">
 
 The doorbell installed on the main door to the house is also Wi-Fi enabled, allowing for two-way communication between anyone at the front door from anywhere as well as allowing the person at the front door to be seen before it is opened (which could help against home intrusions, however unlikely that may be).
+<img src="doorbell.jpg" width=200 style="display: block; margin: 0 auto;">
 
 ## Locks
-Every single door and window in the house has some sort of lock. The windows use regular cylinder key locks, which prevents intrusion when no one is home. Although some of the doors use regular cylinder locks, there are also smart locks installed on two doors. These enable biometrics, NFC keycards, or a PIN code to be used to enter the house. \
+Every single door and window in the house has some sort of lock. The windows use regular cylinder key locks, which prevents intrusion when no one is home. Although some of the doors use regular cylinder locks, there are also smart locks installed on two doors. These enable fingerprints (biometrics), NFC keycards, or a PIN code to be used to enter the house. \
 <img src="smartlock.jpg" width=200 style="display: block; margin: 0 auto;">
 
 ## Motion Sensor Lighting
