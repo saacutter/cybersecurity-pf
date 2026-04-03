@@ -10,6 +10,9 @@ Once I had identified the different types of locks, I chose 10 of these and indi
 ## Warded Locks
 Warded locks are one of the oldest types of locks, and use obstructions (called wards) to block the rotation of keys not designed for that lock. This works by using specially designed keys which avoid the wards, allowing only the correct key to turn. Aside from the wards in lock body, it is mostly empty space which can be easily picked. Consequently, these locks are low security because they solely rely on the wards as protection.
 
+I was able to locate one of these in my house. This particular lock was found on old doors which were kept out the back unused. Because of this I don't have the key, but I have provided a picture of the keyhole as evidence. \
+<img src="warded_lock.jpg"  width="300" style="display: block; margin: 0 auto;">
+
 ## Wafer Tumbler Locks
 Wafer locks use flat metal wafers to control the mechanism. These wafers are pushed into the keyway using springs, which also offers some additional lockpicking security. Once the key is inserted into the keyway, the key's cuts push the wafers to a shear line which allows the cylinder to rotate freely. An incorrect key will pull the wafers down only part of the way or too far, ensuring that only the correct key will move the wafers to the shear line. These locks can either be single-wafer or double-wafer. Single-wafer locks will have the wafers only on one side of the lock body, while a double-wafer lock will have wafers on both sides of the lock body (as well as cuts on both sides of the key).
 
@@ -21,6 +24,9 @@ There are (what are assumed to be) pin tumbler locks located at various points o
 
 ## Tubular Locks
 Tubular locks use a similar mechanism to pin tumbler locks, with the name referring to the fact that the keyface is circular rather than the internal mechanism of the lock. Unlike pin tumbler locks, tubular locks arrange the pins into a circular formation around the keyway and typically contain 8 pins which move horizontally rather than vertically. The key is also circular to accomodate this, with a notch on one side to make the orientation of the key clear. Additional cuts are made to the key's body which correspond with the pin positions to push the pins to the shear line allowing the key plug to freely rotate. Because of the circular shape, these locks are harder to pick than pin tumbler locks (and therefore offer better security) but can still be picked fairly easily.
+
+This particular tubular lock was found on a safe in my house. \
+<img src="tubular_lock.jpg"  width="300" style="display: block; margin: 0 auto;">
 
 ## Disc Detainer/Tumbler Locks
 Disc detainer locks are composed of rotating discs in the lock body. These discs have a notch on the perimeter known as a gate. When the discs are rotated so that all of their gates line up, a sidebar inside the lock cylinder (which usually prevents the cylinder from moving) is dropped allowing it to rotate freely. The key is similar to a pin tumbler key, with its groove being used to rotate the discs specific amounts to make the disc notches line up so that the lock can be unlocked. A key with the wrong notches would mean that at least one disc is rotated incorrectly, preventing the cylinder from being rotated. These are often difficult to pick because of the precision involved in lining up every disc and the lack of feedback (unlike pin tumblers which have springs for feedback). They also sometimes include false gates which have shallower cut-outs than the true gates making picking more difficult.
@@ -39,14 +45,23 @@ Cam locks are common for low security use cases. My desk happens to have a simil
 ## Mortise Locks
 Mortise locks are a common type of lock where the lock is built into a recessed pocket of the door rather than being attached to the door's surface. They require a key to be inserted before they open, ensuring that only authorised people can access what is beyond the door. There are various types of mortise locks, including deadlocks.
 
+I located a mortise lock actively being used within my house. Although the lock isn't completely built into the door's interior due to the age of both the lock and the door, it uses the same principles. \
+<img src="mortise_lock.jpg"  width="300" style="display: block; margin: 0 auto;">
+
 ## Kensington Lock
-The Kensington lock is a type of lock used on portable electronic devices to keep them fixed to a stationary object. There are three types of Kensington locks which all use similar mechanisms - the Kensginton Security Slot/K-slot (typically found on larger devices), the Nano Security Slot (typically found on ultra-thin devices), and the Wedge lock slot (which are only found on Dell laptops). They consist of a metal cable and a small lock which attaches to a dedicated slot on the device. They can be attached by inserting the metal cable into the slot on the device, pushing it in until it clicks, rotating the lock's head, and using the key to secure it in place. The other end of the cable can then be looped around a stationary object to keep the device fixed. They act as anti-theft mechanisms which make quick theft attempts more difficult, but are not intended to be used as a permanent locking tool.
+The Kensington lock is a type of lock used on portable electronic devices to keep them fixed to a stationary object. There are three types of Kensington locks which all use similar mechanisms - the Kensington Security Slot/K-slot (typically found on larger devices), the Nano Security Slot (typically found on ultra-thin devices), and the Wedge lock slot (which are only found on Dell laptops). They consist of a metal cable and a small lock which attaches to a dedicated slot on the device. They can be attached by inserting the metal cable into the slot on the device, pushing it in until it clicks, rotating the lock's head, and using the key to secure it in place. The other end of the cable can then be looped around a stationary object to keep the device fixed. They act as anti-theft mechanisms which make quick theft attempts more difficult, but are not intended to be used as a permanent locking tool.
+
+Although I do not have the actual lock itself available and could not locate one for this part, my laptop does have what appears to be a Kensington K-Slot. \
+<img src="kensington_lock.jpg"  width="300" style="display: block; margin: 0 auto;">
 
 ## Padlocks
 Padlocks are a type of portable lock which are typically used to secure two objects together, such as gates, doors, etc. Most padlocks will use either a numerical combination or a convention key (or a combination of both) to unlock. They consist of a body (which contains the entire mechanism) and a U-shaped shackle (which is typically a metal piece which holds the lock in place with the body). The shackle will often (but not always) include some sort of notch to act as a catch within the lock body, keeping it locked until the lock cylinder is rotated. In general, the weakest links in a padlock will be the material construction and type of mechanism used for keyed locks. Both of these could be the weakest link, meaning that security can significantly vary from lock to lock.
 
-Padlocks are one of the most common types of locks used in public spaces. This particular padlock was being used to lock a cabinet on the outside of the Physics building near the Math building. \
+Padlocks are one of the most common types of locks used in public spaces, and they can use various mechanisms. This particular padlock uses a key (and is likely to be something like a pin tumbler), and it was being used to lock a cabinet on the outside of the Physics building near the Math building. \
 <img src="padlock_uwa_physics.jpg"  width="300" style="display: block; margin: 0 auto;">
+
+This padlock uses a combination to unlock the shackle, which is common for lower security applications (since they can be brute forced much more easily). \
+<img src="padlock_combination.jpg"  width="200" style="display: block; margin: 0 auto;">
 
 ## Miscellaneous Locks
 Below are a few locks which I found but could not identify what type of lock they were or they did not fit the above categories.
@@ -54,14 +69,14 @@ Below are a few locks which I found but could not identify what type of lock the
 The first lock I found was a bike lock being used near the Physics building on campus. \
 <img src="bikelock.jpg"  width="300" style="display: block; margin: 0 auto;">
 
-The second lock I found was a combination of a padlock and seemingly a cam lock being used on a cabinet on the gorund floor of the Computer Science building, which offers extra security compared to just using one or the other. \
-<img src="cam_padlock_combo_cs_gf_cabinet.jpg"  width="300" style="display: block; margin: 0 auto;">
-
-The third lock I found was on the entrance to the Computer Science building. Without seeing the key it would be hard to identify what type of mechanism it uses. \
+The second lock I found was on the entrance to the Computer Science building. Without seeing the key it would be hard to identify what type of mechanism it uses. \
 <img src="keylock_uwa_cs_entrance.jpg"  width="300" style="display: block; margin: 0 auto;">
 
-The fourth lock I found was a keypad lock being used to hold the defibrillator near the Computer Science building on campus. \
+The third lock I found was a keypad lock being used to hold the defibrillator near the Computer Science building on campus. \
 <img src="keypad_uwa_defib.jpg"  width="200" style="display: block; margin: 0 auto;">
+
+The final lock I found was a combination dial lock being used on a mini-safe. These using spinning discs which rotate to effectively create a shear line, allowing the door to open. \
+<img src="combination_dial.jpg"  width="300" style="display: block; margin: 0 auto;">
 
 <br>
 
