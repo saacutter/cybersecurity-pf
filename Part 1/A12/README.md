@@ -59,6 +59,18 @@ Disk encryption is an essential part of information security. It keeps your data
 
 Most modern operating systems have some form of disk encryption mechanism available to use. Windows has BitLocker, MacOS has FileVault, and many Linux distributions come with the Linux Unified Key Setup (LUKS). These all encrypt data slightly differently, but the main objective of protecting your data is the same across all of them.
 
+Third party disk encryption tools also exist. One of these tools is VeraCrypt, which is a free and open-source disk encryption tool. Unlike the tools that come with operating systems, VeraCrypt encrypts the whole disk rather than volumes (although it can still do volumes). Although this offers higher security, it can impact read and write speeds significantly depending on the encryption algorithm being used. To test VeraCrypt, I encrypted an entire external USB drive which had no data on it using VeraCrypt's "portable mode" (which just means it is being used for a drive which it isn't being installed on).
+
+<img src="veracrypt_encrypting.jpg" width="600" style="display: block; margin: 0 auto;">
+
+This made the drive accessible, once mounted using the password on VeraCrypt, on the Z drive (aribtrarily chosen drive number).
+
+<img src="veracrypt_drives.jpg" width="600" style="display: block; margin: 0 auto;">
+
+The E drive still showing is completely inaccessible once the drive has been encrypted, only being accessible from the newly created Z drive.
+
+<img src="veracrypt_open_drive.jpg" width="600" style="display: block; margin: 0 auto;">
+
 ## Memory Forensics Tools
 Memory forensics is the process of capturing an image of the RAM of a device which contains data like currently running processes, open files, network connections, and system/user configurations at the time of the image. This image can then be inspected, identifying if there is evidence of any malicious activity within the image. The RAM is often imaged instead of the main storage drive because the RAM is significantly smaller, so capturing an image will be much quicker and easier to analyse. Additionally, there is some malware which can be executed directly from the memory without being written to the disk so memory forensics can be used to determine the impact it had on the system.
 
