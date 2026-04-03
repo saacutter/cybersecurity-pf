@@ -23,7 +23,6 @@ Most modern devices come with an antivirus built-in to the operating system. Win
 
 Windows Defender is a common antivirus that comes pre-installed on all Windows devices. The security dashboard as it appears on my desktop, as well as the results to a quick scan, can be seen below. \
 <img src="antivirus_windows_defender.png" width="700" style="display: block; margin: 0 auto;">
-
 <img src="antivirus_windows_defender_scan.png" width="700" style="display: block; margin: 0 auto;">
 
 ## Password Managers
@@ -61,7 +60,7 @@ Disk encryption is an essential part of information security. It keeps your data
 
 Most modern operating systems have some form of disk encryption mechanism available to use. Windows has BitLocker, MacOS has FileVault, and many Linux distributions come with the Linux Unified Key Setup (LUKS). These all encrypt data slightly differently, but the main objective of protecting your data is the same across all of them.
 
-Third party disk encryption tools also exist. One of these tools is VeraCrypt, which is a free and open-source disk encryption tool. Unlike the tools that come with operating systems, VeraCrypt encrypts the whole disk rather than volumes (although it can still do volumes). Although this offers higher security, it can impact read and write speeds significantly depending on the encryption algorithm being used. To test VeraCrypt, I encrypted an entire external USB drive which had no data on it using VeraCrypt's "portable mode" (which just means it is being used for a drive which it isn't being installed on).
+Third party disk encryption tools also exist. One of these tools is VeraCrypt, which is a free and open-source disk encryption tool. Unlike the tools that come with operating systems, VeraCrypt encrypts the whole disk rather than volumes (although it can still do volumes). Although this offers higher security, it can impact read and write speeds significantly depending on the encryption algorithm being used. To test VeraCrypt, I encrypted an entire external USB drive which had no data on it using VeraCrypt's "portable mode" (which just means it is being used for a drive which it isn't being installed on). Note that unlike previous images, VeraCrypt does not like screenshots being taken of it (likely to prevent sensitive information from being leaked accidentally) so an external camera was used to photograph the process.
 
 <img src="veracrypt_encrypting.jpg" width="600" style="display: block; margin: 0 auto;">
 
