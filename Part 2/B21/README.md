@@ -1,4 +1,4 @@
-For this activity, the learning activity I created was an activity to showcase SQL injection and command injection attacks. This was built as a Flask application, reusing some resources from my Agile Web Development project (as the application itself was not part of the activity).
+For this activity, the learning activity I created was an activity to showcase SQL injection and command injection attacks. This was built as a Flask application, reusing some resources from my [Agile Web Development project](https://github.com/saacutter/tournament-manager) (as the application itself was not part of the activity).
 
 SQL injection is implemented using a poorly constructed SQL query interfaced with the `sqlite3` library. Against recommended advice, it uses a format string which makes it vulnerable to injection attacks. 
 ![query](sqli_query.png)
