@@ -1,0 +1,75 @@
+- Began with the presentation
+    - Spoke about the amount of breaches recently
+        - Used AFP, Medibank, and HWL Ebsworth hacks as evidence
+        - $2.03 billion combined losses reported to ScamWatch in 2024 (down from $2.7 billion in 2023 and $3.1 billion in 2022)
+        - $62,800 was the average loss for medium businesses in 2024 (down 35% from 2024)
+        - A report is made to Report Cyber every 6 minutes
+        - 60% of breaches involved a human element
+    - Cybercriminals are generally well-organised groups
+        - Hacktivists are ideologically motivated
+        - "script kiddies" are opportunists that want financial gain and reputational damage
+        - Government sponsored actors want financial gain and espionage
+        - Insider employees want financial gain, espionage, and reputational damage
+    - 3 steps to respond to cyberattacks:
+        - Stop (consider red flags in requests)
+        - Check (verify via a publicly listed contact)
+        - Protect (contact NAB if details or money has been shared as a result of a scam)
+    - Speaking about business email compromise (BEC)
+        - Still a way that a lot of cybercrime occurs
+            - Business emails being targeted by crimminals to send malicious emails and make fake payment requests
+            - You should stay aware of phishing messages, check your email rules (for forward/deletion rules), and set up MFA
+        - Signs of suspicious emails include:
+            - Sender address is not from who it says
+            - Psychological triggers
+                - Fear and urgency in correspondence (e.g. critical information from the "bank")
+            - No greeting (since they are sent in mass without your information)
+                - Generic address
+            - Requests personal details
+            - Asks to click on a link which does not match where it says it should take you
+            - No sign-off
+        - SMS phishing is more common than email phishing now
+            - URLs are much harder to disguise in messages but still possible
+            - Organisations usually don't send links in SMS communication
+                - Should be reported to phish@nab.com.au or 0476220003
+        - Phone scams - social engineering and spoofing
+            - Attempts to cause panic to get help
+            - This was the #1 loss for Australians in 2024
+        - Invoice (or payment redirection) scams
+            - Cybercriminals infiltrating organisations by exploiting vulnerabilities (like DNS records not being set up correctly)
+        - CEO impersonation (whale phishing)
+            - These attacks have communication from someone pretending to be the CEO to trick employees
+    - Malicious software
+        - Malware is the main way to start a ransomware attack
+            - Can occur through macros in software like Microsoft Office and Adobe software
+        - Ransomware is primarily delivered through suspicious attachments or links
+            - Designed to disrupt businesses with the aim of getting you to pay ransom by encrypting your organisation's data
+            - May involve criminals stealing/exfiltrating data
+        - To mitigate this, organisations should update software and operating systems, as well as backup their data
+            - Vulnerabilities should be patched before cybercriminals cannot exploit them
+    - Scams expected for 2026:
+        - Romance scams
+            - Involves an attacker romancing a victim and convincing them to send money (similar to catfishing but primarily for financial gain)
+        - Investment scams
+        - AI/deepfakes
+        - Cryptocurrency scams
+    - NAB safeguards
+        - Removed links from SMS messages
+        - Restricted use of NAB's phone numbers and SMS sender ID
+        - Delivered red flags of scams marketing campaign (set for later this year, apparently)
+            - This is being done on various social media platforms like Tik Tok, Instagram, Facebook, etc
+        - Introduced payment alerts for common scam types and blocked payment to high-risk crypto platforms
+    - ACSC essential eight
+        - Preventing malware:
+            - Application control
+            - Patch application
+            - Restrict Microsoft Office macros
+            - User application hardening
+        - 
+    - Recommend password managers and using unique/complex passwords for each account
+        - Also say that NAB has some business offers for being part of NAB, like some Crowdstrike and Microsoft products available for use
+    - Reporting incidens:
+        - Report it to NAB (email, phone number, etc - cases can take weeks to solve)
+        - The ACSC
+    
+- Moved onto Q&A
+    - My internet cut out by this point, but there didn't seem to be any questions in the ~6 minutes it was down (and by the time it was back up at 10:54 it already ended)
