@@ -1,4 +1,13 @@
 **/.venv
 **/__pycache__
 
+# LaTeX compilation files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.out
+*.toc
+
 Part 2/B15/consent.jpg

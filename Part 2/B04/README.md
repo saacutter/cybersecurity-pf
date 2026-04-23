@@ -1,5 +1,5 @@
 # Introduction
-...
+To complete this activity, I attended 3 different labs - March 12, April 2, and April 23. These each covered different topics from the previous week's lecture, like encryption, security tools, and intrusion detection systems. For each activity, I have provided varied evidence which should prove completion.
 
 ## Activity 1 - Thursday, March 12 (Week 3)
 For this activity, everyone got into groups of 4-5. Each person came up with a random number (which for me was whatever number came to my head first, which was 148), and the goal was to calculate the average of every person's number without anyone finding out anyone else's chosen number.
@@ -21,5 +21,9 @@ The evidence provided is a photo taken by one of the group members, as well as a
 
 <br>
 
-## Activity 3 - [TEMP]
-...
+## Activity 3 - Thursday, April 23 (Week 8)
+This activity was focused on intrusion detection systems, specifically focusing on anomaly-based systems. Although this activity required everyone to split into groups of 4, the lab initially only had 3 people so we acted as a group of 3 (with the lab facilitator acting as the fourth). This activity used playing cards acting as network traffic, with one person acting as the network putting the deck of cards down in quick succession. The other people had to try and filter the traffic by looking at the card and grabbing it from the pile if it was marked "malicious" (with a reference provided by the facilitator) before the next one could be put down. When all the cards were put down, the cards which were grabbed from the pile were pooled to identify the number of true positives, true negatives, false negatives, and false positives.
+
+A total of three attempts of this activity were made. None of these attempts were particularly successful, but some of the malicious "traffic" was pulled out with only a few false positives and false negatives.
+
+The evidence for this activity is the initial outcome of the cards I pulled from the pile, as well as a photo of the malicious card reference list.
