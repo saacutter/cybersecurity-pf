@@ -7,7 +7,8 @@
 *.fls
 *.log
 *.synctex.gz
+*.lua
+*.markdown.in
 *.out
-*.toc
 
 Part 2/B15/consent.jpg
