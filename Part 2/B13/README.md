@@ -48,3 +48,5 @@ Consequently, both attempts to jailbreak Grok have been successful and manipulat
 xAI. "Terms of Service - Consumer". Accessed: Apr. 27, 2026. [Online]. Available: https://x.ai/legal/terms-of-service
 
 xAI. "xAI Acceptable Use Policy". Accessed: Apr. 27, 2026. [Online]. Available: https://x.ai/legal/acceptable-use-policy
+
+Left_Resolution_2077. "GROK JAILBREAK". Reddit. Accessed: Apr. 27, 2026. [Online]. Available: https://www.reddit.com/r/AIJailbreak/comments/1svu9rr/grok_jailbreak/
