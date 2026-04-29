@@ -1,0 +1,35 @@
+- Started with presentation by Ryan Terry, Staff Product Marketing Manager at Crowdstrike
+    - Adversary identity evolution has gone from on-premises AD to cloud identity providers to SaaS to AI
+    - Adversaries exploit privilege
+        - Privileged accounts allow lateral movement
+        - Non-human and AI identities are privileged gateways to critical systems
+    - Fragmented tools leave gaps
+        - IAM systems were built for access not security
+        - Legacy systems lack real-time risk signals
+        - Blind to cross-domain attacks
+    - Crowdstrike Falcon is the unified solution (apparently - definitely an ad)
+        - Protects every identity (human, non-human, AI, etc) everywhere
+        - JIT privileged access (allowing for dynamic access control)
+    - Crowdstrike's goal is to stop breaches
+- Moved onto presentation by Thuy Nguyen, Senior Product Marketing Manager at Crowdstrike
+    - Deep dive into adversaries
+    - The core belief at Crowdstrike is that there isn't a malware problem, but an adversary problem
+    - Threat actor motivations include:
+        - Nation-State (goal is financial gain for a country)
+        - eCrime (goal is financial gain)
+            - Blockade Spider is a financially motivated eCrime adversary first seen in April 2024
+            - They use randomware and data theft to monetise their operation
+        - Hacktivist (goal is spread awareness of something)
+    - The threat actor landscape is growing
+        - Crowdstrike tracks over 265 threat actors, with 14 added recently
+        - Also track 150+ clusters because threat actors can appear, do what they need to, then disappear making them hard to track
+    - Crowdstrike's platform is infused with threat intelligence
+        - Collects trillions of events every day
+        - The data is enriched by tracking threat actors
+        - Claim to identity 2 million indicators of compromise (IoCs) per month and block 2.4 million events each year
+- Moved onto presentation by Kendra Kendall, Senior Technical Marketing Manager at Crowdstrike
+    - Moved onto a demo of Crowdstrike Falcon
+        - It integrates with hundreds of SaaS applications to monitor for potential threats
+        - It creates alerts when it finds something vulnerable (like missing MFA)
+- Finished with Q&A session
+    - They apparently differentiate between human and non-human identities by looking at the attributes associated with the entity
