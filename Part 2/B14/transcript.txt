@@ -1,0 +1,140 @@
+ME:
+Who wants to hear about hashing?
+
+
+P:
+Yes
+
+
+ME:
+[REDACTED]
+
+I'll start anyway
+
+So hashing is used to convert strings of arbitrary length into fixed length strings. There's a few different algorithms for this, but the main ones are probably MD5, SHA-1, and SHA-256. These are usually designed to be one way (so unlike encryption they can't be reversed), and it should be infeasible to find two hashes that have the same resultant hash value (which includes it being infeasible to find another hash that matches another and being infeasible to find two strings that hash to the same thing).
+
+It gets interesting when talking about passwords because it's likely that two people will have the same password (this is basically the birthday problem because there are a finite amount of possible passwords). This is a problem because if the hashing algorithm is known, then an attacker could just hash the most common passwords (like password, password1, etc) and can then log into any account using those hashes. Therefore, another security mechanism is needed to make passwords more secure - salting. Salting is basically adding a random value to the end of the password (so password + salt) and then hashing that. Since hashes will significantly change with even a single bit difference, this means that you can have the same password hashed with different salts resulting in different hashes, making these attacks much harder to use.
+
+Now you might be asking, how does finding if two password hashes work if it uses a random salt? Well, the password keeps a copy of the salt. Because hashes are irreversible, these can be stored with the password (on Linux it's stored like $salt$algorithm$hash). This means that whenever the user signs in, the salt is appended to the entered password and the resulting hash is compared
+
+There are a few different types of hashing algorithms, like insecure ones (used for purposes like checksums to make sure files haven't been tampered with because they have been cracked and therefore are insecure like MD5), secure hashes (which are stronger algorithms which are used for more secure purposes like SHA-256), and password hashing algorithms (which are the strongest algorithms used for passwords specifically because they have the strongest protection like bcrypt).
+
+I think that's everything
+
+
+P:
+> So hashing is used to convert strings of arbitrary length into fixed len...
+With the main hashing algorithms can you say which one is the best or not really
+
+
+ME:
+> With the main hashing algorithms can you say which one is the best or not really
+There's no "best" hashing algorithm because it depends on the purpose. Insecure hashing algorithms are still useful for things like file checksums since they're fast and will tell you if a file has been tampered with. Secure hashing algorithms are useful for things like digital signatures since they're still resistant to attack. Password hashing functions are useful for passwords (and not much else because they're slow, intentionally). So it all depends on what purpose you need them for
+
+
+C:
+> It gets interesting when talking about passwords because it's likely tha...
+Does this assume they know the usernames too or do they just cycle through a bunch?
+
+> Now you might be asking, how does finding if two password hashes work if...
+I think I have seen something on this, I still only partly understand it but it makes sense
+
+
+ME:
+> Does this assume they know the usernames too or do they just cycle through a bunch?
+Usually when attackers get this kind of information, it's a database so it'll have information like the username, password hash, and possibly other information like user ID and first/last names. The other information isn't actually that important, primarily it's just the usernames and password hashes (so if they did get their hands on the database and the hashes weren't salted, they could just iterate through all of them and see which match some "common" hashes they already have)
+
+Once the password is salted this becomes much harder because of the properties of hashes (so even hashes of the same text will result in different hashes)
+
+
+C:
+> Usually when attackers get this kind of information, it's a database so...
+Ok yeah that makes a bit more sense. [REDACTED]
+
+
+ME:
+> Ok yeah that makes a bit more sense. [REDACTED]
+[REDCTED]
+
+> I think I have seen something on this, I still only partly understand it but it makes sense
+It's a pretty common technique used for pretty much any account system. The algorithm will typically change, but the idea is the same (mostly because companies could be liable if they don't protect your information as well as they can)
+
+Password hashing is pretty basic security and probably the largest use for hashes right now. They're still used for other things though, sometimes when you download something from the internet they'll provide a checksum like an MD5 hash so you can verify that the file hasn't been altered
+
+
+C:
+> [REDACTED]
+[REDACTED]
+
+> It's a pretty common technique used for pretty much any account system. ...
+Yeah I just went back and read it a bit more carefully and I think I understand it a bit better
+
+basically the salt is added to the hash to make it unique then the system stores that and compares the computed hash with that one when you log in to see if it matches?
+
+Unless that’s not entirely right
+
+> Password hashing is pretty basic security and probably the largest use f...
+Yeah it’s definitely something I’ve heard of but never something I’ve looked into
+
+
+ME:
+> basically the salt is added to the hash to make it unique then the syste...
+It's not necessarily to make it unique by itself (hashes are still a fixed length), but it makes it unique if someone else was to use the same password
+
+
+C:
+Is it technically possible to randomly generate the same salt for the same password
+
+
+ME:
+It means you could theoretically make another password with the same salt to produce the same hash, but it's extremely unlikely that will happen (and the hashing algorithms make it difficult to make two identical hashes)
+
+
+C:
+> Is it technically possible to randomly generate the same salt for the same password
+But two different people I mean
+
+> It means you could theoretically make another password with the same sal...
+Oh well I think I pretty much got my answer there
+
+
+ME:
+> Is it technically possible to randomly generate the same salt for the same password
+It might depend on the algorithm, but I believe all they do is randomly generate a number so it's pretty unlikely. Definitely possible, but someone with the database won't know for sure if those two passwords are the same, even if they can see the salt
+
+
+C:
+> It might depend on the algorithm, but I believe all they do is randomly...
+I guess for the people that make their password something extremely common it could technically happen
+
+I wonder if anyone’s set their password as helloworld
+
+There’s definitely a few
+
+
+ME:
+> I guess for the people that make their password something extremely comm...
+It's just supposed to make viewing the database essentially useless. There's nothing stopping an attacker from programmatically guessing passwords though (but password hashing algorithms are intentionally designed to be slow to prevent this too)
+
+They're essentially designed to be as inconvenient to an attacker as possible to reduce the chances of them getting into an account
+
+> There’s definitely a few
+There definitely will be, but that's why adding the salt is so helpful
+
+
+C:
+> It's just supposed to make viewing the database essentially useless. The...
+True, if you set a weak password that’s kind of on you
+
+> They're essentially designed to be as inconvenient to an attacker as pos...
+So basically cybercrime hates salt
+
+[REDACTED]
+
+> There definitely will be, but that's why adding the salt is so helpful
+That makes a lot of sense yeah
+
+
+ME:
+> True, if you set a weak password that’s kind of on you
+Yeah, security is only as good as its weakest link so you can only do so much to low security passwords unfortunately

@@ -1,0 +1,5 @@
+For this activity, I taught two friends about hashing and hashing algorithms with a particular focus on password hashing and how that works (mostly because that's a common and interesting application of hashing) on April 28 2026. There was no reason for choosing this particular topic, but it is probably the one I am the most knowledgeable about currently and because it's a common cybersecurity application that a lot of people don't know about it seemed like a good teaching topic. 
+
+Although I was given consent to use screenshots of the discussion, I decided to transcribe the conversation instead because it would be easier to redact information. I have, however, included a few screenshots (with private information redacted) to verify that the transcript is legitimate. Due to the transcript's length, it will not be added to this report but can be found on my GitHub repository.
+
+Note that any section with `[REDACTED]` represents a real message in the conversation which was not relevant to the conversation. As they were not relevant, they have been removed from the conversation (but remain in the transcript as some relevant comments referred to them).
