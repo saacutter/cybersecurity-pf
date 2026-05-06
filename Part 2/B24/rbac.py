@@ -15,7 +15,7 @@ class RBAC:
         return self.groups[user]
 
     def set_group(self, use, group):
-        return self.groups[user] = group
+        self.groups[user] = group
     
     def add_user(self, user, group=[]):
         self.groups[user] = group
