@@ -13,4 +13,4 @@ This seminar, as the name suggests, focused on identity-based attacks and how to
 The seminar then features a brief demo of CrowdStrike's Falcon platform, and how it can be used to protect against threats in real-time across all of an organisation's applications with native integration. Finally, the seminar ended with a Q&A session where they answered some of the questions that other participants had during the seminar.
 
 ## Conclusion
-Although this was essentially an advertisement, the entire event (like most events that organisations hold) are essentially just marketing tactics so this wasn't surprising.
+Although this was essentially an advertisement, the entire event (like most events that organisations hold) is essentially just marketing so this wasn't surprising.
