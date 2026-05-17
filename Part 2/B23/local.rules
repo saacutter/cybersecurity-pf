@@ -1,0 +1,11 @@
+# $Id: local.rules,v 1.11 2004/07/23 20:15:44 bmc Exp $
+# ----------------
+# LOCAL RULES
+# ----------------
+# This file intentionally does not come with signatures.  Put your local
+# additions here.
+alert icmp any any -> 104.18.4.186 any (msg: "Traffic to UWA detected"; sid:1000001;)
+
+alert icmp any any -> 8.8.8.8 any (msg: "Traffic to Google detected"; sid:1000002;)
+
+alert tcp any any -> any any (msg: "Scan detected"; sid:1000003;)
