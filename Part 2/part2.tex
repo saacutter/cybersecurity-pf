@@ -83,7 +83,7 @@
             \hline
             B23 & Test an intrusion detection system and discuss its effectiveness. & $\checkmark$ & 2 \\
             \hline
-            B24 & Design and implement access control of your choice. & $\times$ & 0 \\
+            B24 & Design and implement access control of your choice. & $\checkmark$ & 2 \\
             \hline
             B25 & Design and implement a threat intelligence module of your choice. & $\times$ & 0 \\
             \hline
@@ -101,7 +101,7 @@
     \end{center}
 
     Note that several activities have more evidence provided in the GitHub repository as this report was already becoming too large.
-    This applies to activities B5, B9, B12, B14, B15, B21, B23, B27, and B30.
+    This applies to activities B5, B9, B12, B14, B15, B21, B23, B24, B27, and B30.
     
     \newpage
 
@@ -453,7 +453,7 @@
         
         \vspace{-1em}
         \begin{center}
-            \includegraphics[scale=0.25]{B09/registration_details.png}
+            \includegraphics[scale=0.25]{B09/registration_details}
         \end{center}
 
         \bigskip
@@ -466,7 +466,7 @@
         most interest in.
 
         \begin{center}
-            \includegraphics[scale=0.25]{B09/Identity-Based Attacks/attendance_verification.png}
+            \includegraphics[scale=0.25]{B09/Identity-Based Attacks/attendance_verification}
         \end{center}
 
         This seminar, as the name suggests, focused on identity-based attacks
@@ -476,14 +476,14 @@
         alerts).
 
         \begin{center}
-            \includegraphics[scale=0.25]{B09/Identity-Based Attacks/intro.png}
+            \includegraphics[scale=0.25]{B09/Identity-Based Attacks/intro}
         \end{center}
 
         The seminar then moved on to insights into modern adversaries, including
         their motivations, landscape, and threat intelligence.
         
         \begin{center}
-            \includegraphics[scale=0.25]{B09/Identity-Based Attacks/threat_intelligence.png}
+            \includegraphics[scale=0.25]{B09/Identity-Based Attacks/threat_intelligence}
         \end{center}
 
         The seminar then featured a brief demo of CrowdStrike's Falcon platform,
@@ -1162,7 +1162,7 @@
 
         \vspace{-1.5em}
         \begin{center}
-            \includegraphics[scale=0.5]{B23/builtin_discover_attempt.png}
+            \includegraphics[scale=0.5]{B23/builtin_discover_attempt}
         \end{center}
 
         As the simulated malicious traffic was consistently being alerted, it
@@ -1240,8 +1240,8 @@
         
         \vspace{-1.5em}
         \begin{center}
-            \includegraphics[scale=0.5]{B23/uwa_ping.png}
-            \includegraphics[scale=0.5]{B23/google_ping.png}
+            \includegraphics[scale=0.5]{B23/uwa_ping}
+            \includegraphics[scale=0.5]{B23/google_ping}
         \end{center}
 
         To test rule \texttt{1000003} (which should detect all TCP traffic for
@@ -1252,7 +1252,7 @@
         
         \vspace{-1.5em}
         \begin{center}
-            \includegraphics[scale=0.5]{B23/nmap_localhost.png}
+            \includegraphics[scale=0.5]{B23/nmap_localhost}
         \end{center}
 
         As shown in the screenshots above, the custom rules created alerts every
@@ -1285,7 +1285,94 @@
     \newpage
 
     \subsection*{\centering B24. Design and implement access control of your choice.}
-        ...
+        To complete this activity, I implemented a basic access control list
+        using Python. This is modelled after the Windows implementation where
+        the resource owner decides permissions, unlike the Unix-like approach
+        which take a role-based approach to access control. Consequently, this
+        is a discretionary access control (DAC) system.
+
+        \vspace{0.5em}
+
+        Note that unlike traditional access-control implementations, this only
+        stores permission information for as long as the program is running
+        (i.e.~there is no persistent storage mechanism). This means that if the
+        program ever crashes or stops functioning for any reason, the permission
+        associated with each file is lost (but not the files themselves).
+        Additionally, access is only enforced using the program and is,
+        therefore, more like a prototype rather than a complete implementation.
+        The reason for this is because Linux (which is what was being used to
+        run this program) already has its own access control system, and mixing
+        them could potentially break something. While this does mean that any
+        user outside of the program can read any resource contents, it will be
+        assumed that the Python script running the implementation is the only
+        way to access the files for simplicity.
+
+        \bigskip
+
+        \textbf{Functionality} \\
+        This implementation supports a few different (basic) actions - creating
+        a resource, reading a resource, writing to a resource, setting who can
+        read a resource, and changing the resource's owner. By default, the
+        program is signed into the user ``alice'' by default. This is just
+        because the program needs someone signed in because users don't have
+        usernames and passwords (though you can imagine that in a full
+        implementation this would be required).
+        \begin{center}
+            \includegraphics[scale=0.75]{B24/demonstration/default}
+        \end{center}
+
+        Creating a resource is the most basic action. This just creates an empty
+        file and associates it with the user. This action requires the resource
+        name to be defined by the user.
+        \begin{center}
+            \includegraphics[scale=0.75]{B24/demonstration/create}
+        \end{center}
+
+        Now that the resource has been created, it can be read by the resource
+        owner (or anyone with the correct permissions).
+        \begin{center}
+            \includegraphics[scale=0.75]{B24/demonstration/read}
+        \end{center}
+
+        This resource is currently empty, so nothing was returned. This is the
+        perfect opportunity to write some data to the file.
+        \begin{center}
+            \includegraphics[scale=0.65]{B24/demonstration/write}
+        \end{center}
+
+        Now that the writing capabilities have been confirmed and the data can
+        be read, testing that no one else can read it should be the next option.
+        This requires another user (let's call them ``bob'') to be signed into
+        and the previously created file to try and be read.
+        \begin{center}
+            \includegraphics[scale=0.65]{B24/demonstration/read_denial}
+        \end{center}
+
+        This has confirmed that the permissions to file's have been confirmed.
+        Now that the basic functionality has all been confirmed, trying to
+        change the resource's owner is the next action to try. To do this, the
+        \texttt{test} resource created by Alice will be transferred to Bob.
+        \begin{center}
+            \includegraphics[scale=0.5]{B24/demonstration/change_owner_alice}
+            \includegraphics[scale=0.5]{B24/demonstration/change_owner_bob}
+        \end{center}
+
+        Now that Bob owns the file, the permissions to read the file (but not
+        write the file) can be given to Alice.
+        \begin{center}
+            \includegraphics[scale=0.5]{B24/demonstration/change_permissions_bob}
+            \includegraphics[scale=0.5]{B24/demonstration/change_permissions_alice}
+        \end{center}
+
+        However, trying to read this resource from a third user (Charlie) still
+        returns a permission error, as expected.
+        \begin{center}
+            \includegraphics[scale=0.65]{B24/demonstration/change_permissions_charlie}
+        \end{center}
+
+        This demonstration has showcased a minimal access control
+        implementation, showing how resource permissions can be changed and
+        shared around to other users.
     
     \newpage
 
@@ -1522,7 +1609,7 @@
         This flyer's source is available at \href{https://canva.link/nq5h2a1emeity4d}{https://canva.link/nq5h2a1emeity4d}.
 
         \begin{center}
-            \includegraphics[scale=0.65]{B28/flyer.png}
+            \includegraphics[scale=0.65]{B28/flyer}
         \end{center}
 
     \newpage
@@ -1812,7 +1899,7 @@
         This resulted in the following image being generated, which will serve
         as the "base" image for all processes:
         \begin{center}
-            \includegraphics[scale=0.25]{B30/base.png}
+            \includegraphics[scale=0.25]{B30/base}
         \end{center}
 
         \bigskip
@@ -1887,7 +1974,7 @@
         This script, when run on the previously generated image, created the
         following image.
         \begin{center}
-            \includegraphics[scale=0.25]{B30/tests/steganography/watermarked.png}
+            \includegraphics[scale=0.25]{B30/tests/steganography/watermarked}
         \end{center}
 
         By comparing it to the generated image, it is extremely hard to tell the
@@ -2060,7 +2147,7 @@
         established. This will be done by running \texttt{base.png} through the
         verification tool to determine its origin.
         \begin{center}
-            \includegraphics[scale=0.5]{B30/tests/metadata/base_verification.png}
+            \includegraphics[scale=0.5]{B30/tests/metadata/base_verification}
         \end{center}
 
         As expected, the verification process has shown that the image's origin
@@ -2074,7 +2161,7 @@
         \href{https://chatgpt.com/share/69f80f34-aa4c-839c-9cc0-355989639de1}{https://chatgpt.com/share/69f80f34-aa4c-839c-9cc0-355989639de1},
         with the image saved as \texttt{regenerated.png}.
         \begin{center}
-            \includegraphics[scale=0.5]{B30/tests/metadata/regenerated_verification.png}
+            \includegraphics[scale=0.5]{B30/tests/metadata/regenerated_verification}
         \end{center}
 
         This, again, indicated that the image came from one of OpenAI's models
@@ -2090,7 +2177,7 @@
         highest chance of watermark survival. This image is provided as
         \texttt{cropped.png}.
         \begin{center}
-            \includegraphics[scale=0.5]{B30/tests/metadata/cropped_verification.png}
+            \includegraphics[scale=0.5]{B30/tests/metadata/cropped_verification}
         \end{center}
 
         After attempting to verify this image, an error was returned and the
