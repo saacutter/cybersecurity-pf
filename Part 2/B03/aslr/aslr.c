@@ -3,6 +3,6 @@
 
 int main(void) {
     int *p = (int *)malloc(sizeof(int));
-    printf("%p\n", &p);
+    printf("%p\n", p);
     free(p);
 }
